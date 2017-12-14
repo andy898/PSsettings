@@ -1,0 +1,32 @@
+<templateSet group="Laravel-Annotations">
+  <template name="anno" value="/**&#10;* $ANNOTATIONS$&#10;* @return Response&#10;*/" description="Add docblock ready for annotations below" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="ANNOTATIONS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@G" value="@Get(&quot;$ROUTE$&quot;, as=&quot;$NAME$&quot;)" description="Get route annotation" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="ROUTE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@P" value="@Post(&quot;$ROUTE$&quot;, as=&quot;$NAME$&quot;)" description="Post route annotation" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="ROUTE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@M" value="@Middleware(&quot;$NAME$&quot;)" description="Get route annotation" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>

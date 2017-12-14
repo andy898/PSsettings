@@ -1,0 +1,19 @@
+<templateSet group="Laravel-Testing">
+  <template name="cci" value="$I-&gt;$FUNCTION$" description="Codeception $I-&gt;" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="FUNCTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@test" value="/** @test */&#10;public function it_$METHOD$()&#10;{&#10;    // Given&#10;        $GIVEN$&#10;    // When&#10;        $WHEN$&#10;    // Then&#10;        $THEN$&#10; }" description="Test outline" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="METHOD" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="GIVEN" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WHEN" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="THEN" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>

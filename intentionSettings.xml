@@ -1,0 +1,7 @@
+<application>
+  <component name="IntentionManagerSettings">
+    <ignoreAction name="Language Injection/Inject Language/Reference" />
+    <ignoreAction name="PHP/Convert string literal to HEREDOC/NOWDOC" />
+    <ignoreAction name="JavaScript/Other/Replace Single-Quoted String with Double-Quoted String" />
+  </component>
+</application>

@@ -1,0 +1,43 @@
+<templateSet group="Laravel-Misc">
+  <template name="lt" value="{!! link_to('$PATH$', '$TEXT$') !!}" description="Link to" toReformat="false" toShortenFQNames="true">
+    <variable name="PATH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ltr" value="{!! link_to_route('$ROUTE$', '$TEXT$') !!}" description="Link to route" toReformat="false" toShortenFQNames="true">
+    <variable name="ROUTE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="errors" value="@if (count($errors) &gt; 0)&#10;&#9;&lt;ul class=&quot;alert alert-danger&quot;&gt;&#10;&#9;&#9;@foreach ($errors-&gt;all() as $error)&#10;&#9;&#9;&#9;&lt;li&gt;{{ $error }}&lt;/li&gt;&#10;&#9;&#9;@endforeach&#10;&#9;&lt;/ul&gt;&#10;@endif" description="Error loop" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="rv" value="return view('$END$');" description="return view()" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="&gt;w" value="-&gt;with('$NAME$', $$$VALUE$);$END$" description="with()" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="NAME" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="master" value="&lt;!DOCTYPE html&gt;&#10;&lt;html&gt;&#10;&lt;head&gt;&#10;&#9;&lt;meta charset=&quot;utf-8&quot;&gt;&#10;&#9;&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;&#10;&#9;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;&#10;&#10;&#9;&lt;title&gt;@yield('title') / $TITLE$&lt;/title&gt;&#10;&#10;&#9;&lt;link rel=&quot;stylesheet&quot; href=&quot;{{ asset('css/bootstrap.min.css') }}&quot;&gt;&#10;&#9;&lt;link rel=&quot;stylesheet&quot; href=&quot;{{ asset('css/main.css') }}&quot;&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&#10;&#9;&lt;header class=&quot;container&quot;&gt;&#10;&#9;&#9;$END$&#10;&#9;&lt;/header&gt;&#10;&#10;&#9;&lt;main&gt;&#10;&#9;&#9;&lt;div class=&quot;container&quot;&gt;&#10;&#9;&#9;&#9;@yield('content')&#10;&#9;&#9;&lt;/div&gt;&#10;&#9;&lt;/main&gt;&#10;&#9;&#10;&#9;&lt;footer class=&quot;container&quot;&gt;&#10;&#9;&#9;&#10;&#9;&lt;/footer&gt;&#10;&#10;    &lt;script src=&quot;{{ asset('js/jquery.js') }}&quot;&gt;&lt;/script&gt;&#10;    &lt;script src=&quot;{{ asset('js/app.js') }}&quot;&gt;&lt;/script&gt;&#10;&#10;&lt;/body&gt;&#10;&lt;/html&gt;" description="master template" toReformat="false" toShortenFQNames="true">
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>

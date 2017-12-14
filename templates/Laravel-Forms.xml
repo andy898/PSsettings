@@ -1,0 +1,124 @@
+<templateSet group="Laravel-Forms">
+  <template name="fo" value="{!! Form::open() !!}" description="Form open tag" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="fc" value="{!! Form::close() !!}" description="Form close tag" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="textfield" value="{{-- $VALUE$ Field --}}&#10;&lt;div class=&quot;form-group&quot;&gt;&#10;    {!! Form::label('$NAME$', '$VALUE$:') !!}&#10;    {!! Form::text('$NAME$', null, [&#10;        'class' =&gt; 'form-control'&#10;    ]) !!}&#10;&lt;/div&gt;" description="Text form field" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="emailfield" value="{{-- $VALUE$ Field --}}&#10;&lt;div class=&quot;form-group&quot;&gt;&#10;    {!! Form::label('$NAME$', '$VALUE$:') !!}&#10;    {!! Form::email('$NAME$', null, [&#10;        'class' =&gt; 'form-control'&#10;    ]) !!}&#10;&lt;/div&gt;" description="Email form field" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="passwordfield" value="{{-- $VALUE$ Field --}}&#10;&lt;div class=&quot;form-group&quot;&gt;&#10;    {!! Form::label('$NAME$', '$VALUE$:') !!}&#10;    {!! Form::password('$NAME$', [&#10;        'class' =&gt; 'form-control'&#10;    ]) !!}&#10;&lt;/div&gt;" description="Password form field" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="textareafield" value="{{-- $VALUE$ Field --}}&#10;&lt;div class=&quot;form-group&quot;&gt;&#10;    {!! Form::label('$NAME$', '$VALUE$:') !!}&#10;    {!! Form::textarea('$NAME$', null, [&#10;        'class' =&gt; 'form-control'&#10;    ]) !!}&#10;&lt;/div&gt;" description="Text area form field" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hiddenfield" value="{!! Form::hidden('$NAME$', $VALUE$) !!}" description="Hidden form field" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="submitfield" value="{{-- $VALUE$ Submit --}}&#10;&lt;div class=&quot;form-group&quot;&gt;&#10;    {!! Form::submit('$NAME$', [&#10;        'class' =&gt; 'btn btn-primary'&#10;    ]) !!}&#10;&lt;/div&gt;" description="Submit form field" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="req" value="'required' =&gt; true" description="Require field (add in the attribute array of any form field type to make field required." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="plc" value="'placeholder' =&gt; '$END$'" description="Placeholder attribute" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="buttonfield" value="{{-- $VALUE$ Button --}}&#10;&lt;div class=&quot;form-group&quot;&gt;&#10;    {!! Form::button('$NAME$', [&#10;        'type' =&gt; 'submit', &#10;        'class' =&gt; 'btn btn-primary'&#10;&#9;]) !!}&#10;&lt;/div&gt;" description="Button field" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="fopen" value="{!! Form::open(['$TYPE$' =&gt; '$TARGET$'$OPTIONS$]) !!}&#10;&#9;$END$&#10;{!! Form::close() !!}" description="Open a Form" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="enum(&quot;route&quot;, &quot;url&quot;, &quot;action&quot;)" defaultValue="&quot;route&quot;" alwaysStopAt="true" />
+    <variable name="TARGET" expression="" defaultValue="&quot;route.name&quot;" alwaysStopAt="true" />
+    <variable name="OPTIONS" expression="" defaultValue="&quot;, 'method' =&gt; 'post'&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="cla" value="'class' =&gt; '$END$'" description="Class attribute" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="checkfield" value="&lt;label class=&quot;checkbox&quot;&gt;&#10;&#9;{!! Form::checkbox('$NAME$', '$DEFAULT$', $CHECKED$) !!}&#10;&#9;$TEXT$&#10;&lt;/label&gt;$END$" description="Generate a Checkbox element (name, value, checked, attributes)" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="DEFAULT" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="CHECKED" expression="enum(&quot;null&quot;, &quot;true&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT" expression="" defaultValue="&quot;checkbox text&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="radiofield" value="&lt;label class=&quot;radio&quot;&gt;&#10;&#9;{!! Form::radio('$NAME$', '$DEFAULT$', $CHECKED$) !!}&#10;&#9;$TEXT$&#10;&lt;/label&gt;$END$" description="Generate a Radio element (name, value, checked, attributes)" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="DEFAULT" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="CHECKED" expression="enum(&quot;null&quot;, &quot;true&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT" expression="" defaultValue="&quot;radio text&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="datefield" value="{{-- $VALUE$ Field --}}&#10;&lt;div class=&quot;form-group&quot;&gt;&#10;&#9;{!! Form::label('$NAME$', '$VALUE$:') !!}&#10;&#9;{!! Form::date('$NAME$', null, ['class' =&gt; 'form-control']) !!}&#10;&lt;/div&gt;" description="Date field" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>

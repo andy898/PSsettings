@@ -1,0 +1,29 @@
+<templateSet group="Laravel-Composer Packages">
+  <template name="gene" value="&quot;laracasts/generators&quot;: &quot;^1.1&quot;," description="laracasts/generators" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSON" value="true" />
+    </context>
+  </template>
+  <template name="collective" value="&quot;laravelcollective/html&quot;: &quot;^5.1&quot;," description="laravelcollective/html" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JSON" value="true" />
+    </context>
+  </template>
+  <template name="reqdev" value="&quot;require-dev&quot;: {&#10;    $DEPENDENCY$&#10;}," description="Add require-dev to composer.json file" toReformat="false" toShortenFQNames="true">
+    <variable name="DEPENDENCY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JSON" value="true" />
+    </context>
+  </template>
+  <template name="flash" value="&quot;laracasts/flash&quot;: &quot;^1.3&quot;," description="laracasts/flash" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JSON" value="true" />
+    </context>
+  </template>
+  <template name="idehelp" value="&quot;barryvdh/laravel-ide-helper&quot;: &quot;^2.1&quot;," description="barryvdh/laravel-ide-helper" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JSON" value="true" />
+    </context>
+  </template>
+</templateSet>

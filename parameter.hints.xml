@@ -1,0 +1,10 @@
+<application>
+  <component name="ParameterNameHintsSettings">
+    <blacklists>
+      <blacklist language="PHP">
+        <added pattern="\view(view,data,mergeData)" />
+        <removed pattern="" />
+      </blacklist>
+    </blacklists>
+  </component>
+</application>

@@ -1,0 +1,144 @@
+<keymap version="1" name="Default copy" parent="Mac OS X 10.5+">
+  <action id="ActivateFindToolWindow" />
+  <action id="ActivateTerminalToolWindow">
+    <keyboard-shortcut first-keystroke="meta 3" />
+  </action>
+  <action id="Back">
+    <keyboard-shortcut first-keystroke="meta open_bracket" />
+    <mouse-shortcut keystroke="button4" />
+  </action>
+  <action id="CommentByBlockComment">
+    <keyboard-shortcut first-keystroke="meta alt divide" />
+    <keyboard-shortcut first-keystroke="shift meta divide" />
+    <keyboard-shortcut first-keystroke="ctrl meta slash" />
+  </action>
+  <action id="CompareTwoFiles">
+    <keyboard-shortcut first-keystroke="ctrl meta alt d" />
+  </action>
+  <action id="Console.Jdbc.Execute" />
+  <action id="Console.Jpa.Execute" />
+  <action id="Console.TableResult.NextPage" />
+  <action id="Console.TableResult.PreviousPage" />
+  <action id="Console.TableResult.SubmitAddedRow" />
+  <action id="CopyElement">
+    <keyboard-shortcut first-keystroke="f5" />
+    <keyboard-shortcut first-keystroke="meta d" />
+  </action>
+  <action id="DashLauncherAction">
+    <keyboard-shortcut first-keystroke="shift alt d" />
+  </action>
+  <action id="Diff.ShowDiff">
+    <keyboard-shortcut first-keystroke="ctrl meta alt d" />
+  </action>
+  <action id="EditorDeleteLine">
+    <keyboard-shortcut first-keystroke="meta back_space" />
+    <keyboard-shortcut first-keystroke="meta l" />
+  </action>
+  <action id="EditorDeleteToWordStart">
+    <keyboard-shortcut first-keystroke="alt back_space" />
+    <keyboard-shortcut first-keystroke="ctrl back_space" />
+  </action>
+  <action id="EditorSelectWord">
+    <keyboard-shortcut first-keystroke="ctrl alt up" />
+  </action>
+  <action id="EditorSplitLine">
+    <keyboard-shortcut first-keystroke="shift enter" />
+  </action>
+  <action id="EditorStartNewLine">
+    <keyboard-shortcut first-keystroke="meta enter" />
+  </action>
+  <action id="EditorToggleCase" />
+  <action id="EditorUnSelectWord">
+    <keyboard-shortcut first-keystroke="ctrl alt down" />
+  </action>
+  <action id="FileChooser.GotoModule" />
+  <action id="FileChooser.TogglePathShowing" />
+  <action id="FileStructurePopup">
+    <keyboard-shortcut first-keystroke="meta f12" />
+    <keyboard-shortcut first-keystroke="meta r" />
+  </action>
+  <action id="Forward">
+    <keyboard-shortcut first-keystroke="meta close_bracket" />
+    <mouse-shortcut keystroke="button5" />
+  </action>
+  <action id="GotoAction">
+    <keyboard-shortcut first-keystroke="shift meta a" />
+    <keyboard-shortcut first-keystroke="shift meta p" />
+  </action>
+  <action id="GotoFile">
+    <keyboard-shortcut first-keystroke="shift meta o" />
+    <keyboard-shortcut first-keystroke="meta p" />
+  </action>
+  <action id="GotoLine">
+    <keyboard-shortcut first-keystroke="ctrl g" />
+  </action>
+  <action id="GotoRelated" />
+  <action id="GotoRow" />
+  <action id="GotoTest" />
+  <action id="Images.ShowThumbnails" />
+  <action id="IncrementalSearch">
+    <keyboard-shortcut first-keystroke="shift meta i" />
+  </action>
+  <action id="Jdbc.RunQueryInConsole" />
+  <action id="MoveLineDown">
+    <keyboard-shortcut first-keystroke="ctrl meta down" />
+  </action>
+  <action id="MoveLineUp">
+    <keyboard-shortcut first-keystroke="ctrl meta up" />
+  </action>
+  <action id="NextOccurence" />
+  <action id="NextTab">
+    <keyboard-shortcut first-keystroke="shift meta close_bracket" />
+    <keyboard-shortcut first-keystroke="ctrl right" />
+    <keyboard-shortcut first-keystroke="meta alt right" />
+  </action>
+  <action id="ParameterInfo" />
+  <action id="PreviousOccurence" />
+  <action id="PreviousTab">
+    <keyboard-shortcut first-keystroke="shift meta open_bracket" />
+    <keyboard-shortcut first-keystroke="ctrl left" />
+    <keyboard-shortcut first-keystroke="meta alt left" />
+  </action>
+  <action id="Refresh" />
+  <action id="RenameElement">
+    <keyboard-shortcut first-keystroke="shift f6" />
+    <keyboard-shortcut first-keystroke="meta r" />
+  </action>
+  <action id="ReopenClosedTab">
+    <keyboard-shortcut first-keystroke="shift meta t" />
+  </action>
+  <action id="Replace" />
+  <action id="Rerun" />
+  <action id="SelectNextOccurrence">
+    <keyboard-shortcut first-keystroke="shift meta d" />
+  </action>
+  <action id="SplitHorizontally">
+    <keyboard-shortcut first-keystroke="ctrl h" />
+  </action>
+  <action id="SplitVertically">
+    <keyboard-shortcut first-keystroke="ctrl v" />
+  </action>
+  <action id="SurroundWithEmmet">
+    <keyboard-shortcut first-keystroke="meta alt w" />
+  </action>
+  <action id="SwitchApply">
+    <keyboard-shortcut first-keystroke="shift alt enter" />
+  </action>
+  <action id="SwitchDown">
+    <keyboard-shortcut first-keystroke="shift alt down" />
+  </action>
+  <action id="SwitchLeft">
+    <keyboard-shortcut first-keystroke="shift alt left" />
+  </action>
+  <action id="SwitchRight">
+    <keyboard-shortcut first-keystroke="shift alt right" />
+  </action>
+  <action id="SwitchUp">
+    <keyboard-shortcut first-keystroke="shift alt up" />
+  </action>
+  <action id="TypeHierarchy" />
+  <action id="Uml.ShowDiff" />
+  <action id="UsageView.Rerun" />
+  <action id="Vcs.QuickListPopupAction" />
+  <action id="ViewSource" />
+</keymap>
